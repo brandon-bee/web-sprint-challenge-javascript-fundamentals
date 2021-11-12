@@ -26,13 +26,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+  .map will return a new array automatically and requires a return statement.
+  .filter also automatically returns a new array and needs a return statement. In this case though, the return statement is a condition, if true, the element gets passed into the new array.
+  .reduce returns a single value instead of an array. It takes 2 arguments, and uses these to keep a running total of whatever operator you chose to iterate on the array.
+
+
 2. Explain the difference between a callback and a higher order function.
+
+  A higher order function is a function that accepts other functions as arguments. A callback function is what we call the functions that are passed into those higher order functions.
 
 3. Explain what a closure is.
 
+  A closure is when a nested function (function inside of another function) goes outside of itself to the parent function and references data in that function to use.
+
 4. Describe the four principles of the 'this' keyword.
 
+  There is window/global binding, implicit binding, new binding, and explicit binding.
+  Window binding is when 'this' has nothing else to point to so it refers to the entire global object or window.
+  Implicit is when a function is called and 'this' refers to the object left of the dot being called with the function.
+  New binding is when we use a constructor function to make a new object with the new keyword. It tells 'this' to reference the newly created object.
+  Explicit binding is when we tell the program what we want 'this' to refer to by using methods like .call, .apply, or .bind
+
 5. Why do we need super() in an extended class?
+
+  super takes in a parameter(s) to let the new class know to get all the keys from the class it is inheriting from.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
