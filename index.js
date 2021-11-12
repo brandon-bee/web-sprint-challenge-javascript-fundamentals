@@ -16,10 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
-
-
-
+/*
+the rules of scope say that a nested function will first look in itself for the variable, and if it can not find it, it will go up a level to the parent and see if it can get the date there. In this case, internal is defined in the parent myFunction, so nestedFunction can inherit and use it.
+*/
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
